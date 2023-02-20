@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Personal Profile Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section>
+      <h1 id="title">Creat your Personal Profile</h1>
+      <form>
+        <p id="description">
+          We want to get to know you! Please enter your personal information.
+        </p>
+        <fieldset aria-describedby="description">
+          <legend>Personal information</legend>
+
+          <label for="first-name">First name</label>
+          <input type="text" name="first-name" id="first-name" />
+
+          <label for="email">Email address</label>
+          <input type="email" name="email" id="email" />
+
+          <label for="birthday"> Your Birthday:</label>
+          <input id="birthday" type="date" />
+        </fieldset>
+        <p id="further-information">
+          Can you tell us a little bit more? We want to annoy you with unwanted
+          ads.
+        </p>
+        <fieldset aria-describedby="further-information">
+          <legend>Further Information</legend>
+          <label for="favcolor">Favourite Color:</label>
+          <input type="color" id="favcolor" name="favcolor" value="#CC3300" />
+
+          <label for="favourite-pet">What's your favourite pet?</label>
+          <select name="favourite-pet" id="favourite-pet">
+            <option value=""> --- choose your destiny --- </option>
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+          </select>
+        </fieldset>
+        <button type="submit" aria-label="Close form">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
